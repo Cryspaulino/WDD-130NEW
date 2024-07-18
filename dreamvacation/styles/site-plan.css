@@ -5,10 +5,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #93c4e7   ;
-  --secondary-color: #e42929fd ;
-  --accent1-color: #021269;
-  --accent2-color: white;
+  --primary-color: #003049;
+  --secondary-color: #669BBC;
+  --accent1-color: #FDF0D5;
+  --accent2-color: #C1121F;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Teko, "IM Fell French Canon SC";

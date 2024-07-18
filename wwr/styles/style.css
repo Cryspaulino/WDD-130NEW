@@ -263,7 +263,10 @@ footer .social img {
     max-height: 400px;
     overflow: clip;
 }
-
+.rivers {
+    margin: 50px;
+    text-align: center;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;

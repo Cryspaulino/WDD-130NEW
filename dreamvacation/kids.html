@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DReam Vacations | Dominican Republic Site | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- going back to top button -->
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+
+    </script>
+
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="./images/Dom Rep.jpeg" alt="DR Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="food.html">Food</a>
+            <a href="kids.html">Kids</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <button class="tablink" onclick="openPage('Home', this, 'red')">All ages</button>
+        <button class="tablink" onclick="openPage('News', this, '669BBC')" id="defaultOpen">News</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+        <div id="Home" class="tabcontent">
+            <h3>For all ages</h3>
+            <img src="../beachdr.jpg" alt="">
+            <p>Enjoying with family at the beach</p>
+            <p>Visit a chocolate factory</p>
+            <p>Visit the water parks</p>
+        </div>
+
+        <div id="News" class="tabcontent">
+            <h3>News</h3>
+            <p>Some news this fine day!</p>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+        <script>
+            function openPage(pageName, elmnt, color) {
+                // Hide all elements with class="tabcontent" by default */
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Remove the background color of all tablinks/buttons
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+
+                // Show the specific tab content
+                document.getElementById(pageName).style.display = "block";
+
+                // Add the specific color to the button used to open the tab content
+                elmnt.style.backgroundColor = color;
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
+    </main>
+
+    <footer>
+        <p>DReam Vacation &copy; 2024 - Crystal Paulino</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="../facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="../twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="../instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>

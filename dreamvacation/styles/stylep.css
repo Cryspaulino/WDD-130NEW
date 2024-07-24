@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 .home-title {
-    font-family: 'Teko', 'Poetsen One';
+    font-family: 'Teko', 'Poetsen One', Georgia, 'Times New Roman', Times, serif;
     font-size: 2em;
     margin-top: 10px;
     color: #003049;
@@ -58,34 +58,29 @@ nav a:hover {
     display: grid;
 }
 .food-card {
-    grid-column: 8/10;
+    grid-column: 1/5;
     grid-row: 2/3;
 }
 
 .kids-card {
-    grid-column: 5/7;
+    grid-column: 5/10;
     grid-row: 2/3;
 }
 
 .home-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    text-align: center;
 }
 
 .msg h2 {
-    font-family: 'Teko', 'Oswald';
+    font-family: 'Teko', 'Oswald', 'Times New Roman', Times, serif;
     font-size: 2em;
     color: #780000;
     /* Deep red */
 }
 
 #background {
-    display: grid;
-    height: 725px;
+    height: 50px;
     background-color: #fdf0d5;
-    /* Creamy beige */
-    grid-column: 1/11;
-    grid-row: 4/9;
 }
 
 .logo {
@@ -244,8 +239,7 @@ footer .social img {
 
 .book,
 .join {
-    background-color: #669bbc;
-    /* Soft blue */
+    background-color: #669BBC
 }
 
 .book:hover,
@@ -317,7 +311,7 @@ footer .social img {
 /* Caption text */
 .text {
     color: black;
-    font-size: 20px;
+    font-size: 22px;
     padding: 8px 12px;
     bottom: 8px;
     width: 100%;
@@ -520,12 +514,12 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font-family: times;
+    font-family: "Teko";
 }
 
 /* Style tab links */
 .tablink {
-    background-color: #555;
+    background-color: #003049;
     color: white;
     float: left;
     border: none;
@@ -537,7 +531,7 @@ html {
 }
 
 .tablink:hover {
-    background-color: #777;
+    background-color: #FDF0D5;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -551,7 +545,7 @@ html {
     background-color: #C1121F;
 }
 #News {
-    background-color: #003049;
+    background-color: #669BBC;
 }
 #Contact {
     background-color: #FDF0D5;

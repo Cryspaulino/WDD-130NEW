@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+/* HEADER PARA BARRA DE NAV */
+header {
+    background-color: #003049;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+/* LOGO */
+.logo {
+    width: 80px;
+    padding-top: 5px;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+/* BARRA DE NAVEGACION */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    color: #fdf0d5;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover {
+    background-color: #C1121F;
+    color: #FDF0D5;
+}
+
+/* INTRO */
+.home-title {
+    font-family: "Teko", "Oswald";
+    font-size: 2em;
+    margin-top: 10px;
+}

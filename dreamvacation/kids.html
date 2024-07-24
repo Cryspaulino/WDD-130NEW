@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DReam Vacations | Dominican Republic Site | Home</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>DReam Vacations | Dominican Republic Site | Activities for Kids</title>
+    <link rel="stylesheet" href="styles/stylep.css">
 </head>
 
 <body>
     <!-- going back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script>
         let mybutton = document.getElementById("myBtn");
 
@@ -21,7 +22,7 @@
 
     <header>
         <a id="logo_link" href="index.html">
-            <img class="logo" src="./images/Dom Rep.jpeg" alt="DR Logo">
+            <img class="logo" src="./images/domrep.jpeg" alt="domrep Logo">
         </a>
         <nav>
             <a href="index.html">Home</a>
@@ -32,32 +33,32 @@
     </header>
 
     <main>
+        <button class="tablink" onclick="openPage('News', this, '669BBC')" id="defaultOpen">5+ years old</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'blue')">8+ years old</button>
         <button class="tablink" onclick="openPage('Home', this, 'red')">All ages</button>
-        <button class="tablink" onclick="openPage('News', this, '669BBC')" id="defaultOpen">News</button>
-        <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+        <div id="News" class="tabcontent">
+            <h3>5+ years old</h3>
+            <img src="../dolphin.jpg" alt="dolphin">
+            <p>Swim with dolphins, Punta Cana, Puerto Plata.</p>
+            <p>Explore Caves, Puerto Plata.</p>
+            <p>Go Snorkeling, Bávaro.</p>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h3>8+ years old</h3>
+            <img src="../whale.jpg" alt="whale">
+            <p>Go whale watching, Samana.</p>
+            <p>Learn to surf, Cabarete, Puerto Plata.</p>
+            <p>Visit history museums, Santo Domingo.</p>
+        </div>
 
         <div id="Home" class="tabcontent">
             <h3>For all ages</h3>
             <img src="../beachdr.jpg" alt="">
-            <p>Enjoying with family at the beach</p>
-            <p>Visit a chocolate factory</p>
-            <p>Visit the water parks</p>
-        </div>
-
-        <div id="News" class="tabcontent">
-            <h3>News</h3>
-            <p>Some news this fine day!</p>
-        </div>
-
-        <div id="Contact" class="tabcontent">
-            <h3>Contact</h3>
-            <p>Get in touch, or swing by for a cup of coffee.</p>
-        </div>
-
-        <div id="About" class="tabcontent">
-            <h3>About</h3>
-            <p>Who we are and what we do.</p>
+            <p>- Enjoying with family at the beach, Bávaro, Puerto plata and Punta Cana.</p>
+            <p>- Visit a chocolate factory, Puerto Plata.</p>
+            <p>- Visit the water parks, Punta Cana, Santo Domingo.</p>
         </div>
         <script>
             function openPage(pageName, elmnt, color) {
